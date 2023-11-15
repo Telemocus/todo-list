@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="dist/css/style.min.css">
+     <title>Todo List | Mocus</title>
+</head>
+<body>
+     <main>
+          <section class="newItemEntry">
+               <form action="" id="itemEntryform">
+                    <label for="newItem">
+                    Enter a new to do item
+                    </label>
+                    <input type="text" size="40" autocapitalize="off" placeholder="Add Item"  tabindex="0" id="newItem">
+                    <button id="addItem" title="Add New Item" aria-label="Add new item to list"  tabindex="0" class="buttons">+</button>
+               </form>
+          </section>
+          <section class="listContainer">
+               <div class="listTitle">
+                    <h1>To Do List</h1>
+                    <button id="clearItems" class="buttons" title="Clear The List" aria-label="Remove Items From The List" tabindex="0">Clear</button>
+               </div>
+               <hr />
+               <div id="listItems">
+               <div class="items">
+                    <input type="checkbox" id="1" tabindex="0">
+                    <label for="1">EAT</label>
+               </div>
+               <div class="items">
+                    <input type="checkbox" id="2" tabindex="0">
+                    <label for="2">SLEEP</label>
+               </div>
+          </div>
+          </section>
+          
+     </main>
+
+     <script src="script.js"></script>
+</body>
+</html>
